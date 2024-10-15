@@ -30,6 +30,7 @@ for (let i = 0 ; i < 100; i++) {
         // il num è divisibile per 3
         console.log ('Fizz')
     } else {
+        // il num non è divisibile ne per 3 e ne per 5
         console.log (num)
     }
 }
