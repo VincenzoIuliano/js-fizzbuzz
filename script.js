@@ -20,17 +20,21 @@ for (let i = 0 ; i < 100; i++) {
     const resto3 = num % 3  // [0,1,2]
     const resto5 = num % 5  // [0,1,2,3,4]
 
+    let message = '' + num // string
+
     if (resto3 === 0 && resto5 === 0 ) {
         // il num è divisibile per 3 e per 5
-        console.log ('FizzBuzz')
+        message = 'FIZZBUZZ'
     } else if (resto5 ===0) {
         // il num è divisibile per 5
-        console.log ('Buzz')
+        message = 'FIZZ'
     } else if (resto3 === 0) {
         // il num è divisibile per 3
-        console.log ('Fizz')
+        message = 'BUZZ'
     } else {
         // il num non è divisibile ne per 3 e ne per 5
-        console.log (num)
+        message = '' + num
     }
+
+    console.log (message)
 }
